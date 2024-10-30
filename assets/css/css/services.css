@@ -1,0 +1,1590 @@
+:root {
+    --primary: #ED6F73;
+    --light: #657CEE;
+      --primarystrong: #ff555a;
+  }
+    /*var(--primarystrong)*/
+    
+    /**********************************************
+    ********        All services       *********
+    **********************************************/
+    input[type=email], input[type=number], input[type=password], 
+    input[type=reset],input[type=search], 
+    input[type=tel], input[type=text],
+    input[type=url], select, textarea {
+        color: #666;
+        padding: 0.75em;
+        height: auto;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #eaeaea;
+        border-radius: 2px;
+            width: 100%;
+        background: #fafafa;
+        box-shadow: none;
+        box-sizing: border-box;
+        transition: all .2s linear;
+    }
+    .insapp_reviews_sucess{
+        text-align: center;
+        margin-top: 30px;
+        background-color: rgb(206 255 209); 
+        color: rgb(85 171 112); 
+        font-weight: 600;
+        justify-content: center; 
+        min-height: 30px;
+        align-items: center; 
+        display: none; 
+        font-size: 14px; 
+        border-radius: 5px;
+    }
+    .ib-radius-dialog{
+        margin-bottom: 20px;
+    }
+    .listings-ordering svg{
+        font-size: 20px;
+    }
+    .listings-ordering{
+            display:none;
+     }
+   
+    .ia-filter-location-card .ia-filter-lieu{
+        color: #666;
+        border-radius: 10px; 
+        margin-bottom: 10px;
+        background: #ffffff; 
+    }
+    .ia-filter-location-card,.ia-price-range-card{
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .ib-radius-dialog input[type=range]::-webkit-slider-thumb {
+      background-color: var(--primary);
+    }
+    .ib-radius-dialog input[type=range] {
+      -webkit-appearance: none;
+      background: #e8e8e8;
+       margin-top: 10px;
+  }
+    .ib-radius-dialog .ib-radius-range{
+        width: 70%;
+        height: 4px;
+        border-radius: 5px;
+        background: #de1ac6;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    .ib-radius-dialog .ib-radius-range::-webkit-slider-thumb:hover {
+      box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.16);
+      transition: 0.3s ease-in-out;
+    }
+    .ib-radius-dialog .ib-radius-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #000000;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    .ib-radius-dialog .ib-radius-value{
+        float: right!important;
+    }
+    
+    .insapp_reviews_sucess_display{
+        display: flex!important;  
+    }
+    .insapp_reviews_echec_display{
+        display: flex!important; 
+        background-color: #ffcece!important;
+        color: #f75555!important; 
+    }
+    .insapp_loader_ajax_container {
+        box-shadow: 0 0 20px rgba(170, 36, 227, 0.4);
+        background: var(--primary);
+        display: none;
+        transition: 0.4s;
+        position: relative;
+        margin: 30px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        top: calc(50% - 15px);
+        /* transform: translateY(-50%); */
+        /* background: #66676b; */
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(102, 103, 107, 0.4);
+    }
+     
+    .insapp_loader_listing_ajax_container {
+        box-shadow: 0 0 20px rgba(170, 36, 227, 0.4);
+        background: var(--primary);
+        display: none;
+        transition: 0.4s;
+        position: absolute; 
+        text-align: center;
+        left: 50%;
+        z-index: 100;
+        top: 250px; 
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(102, 103, 107, 0.4);
+    }
+    
+    .elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated>.elementor-widget-wrap {
+        padding: 0px!important;
+    }
+    
+    h4,h2,h3,h1{
+        text-transform: capitalize;
+    }
+    
+    .insapp_loader_ajax_btn{
+        border-radius: 50%;
+        display: none;
+        width: 22px;
+        height: 22px;
+        border: 0.3rem solid rgba(255, 255, 255, 0.2);
+        border-top-color: white;
+        /* -webkit-animation: spin 1s infinite linear; */
+        animation: spin .6s infinite linear, grow .3s forwards ease-out;
+        /* animation: spin 1s infinite linear;  */
+        top: 10px;
+        position: absolute;
+        right: 25px;
+    }
+    .insapp_total_content{
+        border-top: 1px solid #eee;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .ia_price_product_content_total{
+        color: var(--primary);
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    .name_white {
+      color: #fff !important;
+  }
+    .insapp_extra{
+        display: flex;
+        justify-content: space-between; 
+        border: 1px solid var(--primary);
+        padding: 10px 0;
+        margin: 20px 0;
+        border-radius: 20px;
+        color: var(--primary);
+        padding: 10px 0;
+    }
+    
+    .insapp_loader_ajax_containeradmin {
+        box-shadow: 0 0 20px rgba(170, 36, 227, 0.4);
+        background: var(--primary);
+        display: none;
+        transition: 0.4s;
+        position: relative;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 50px;
+        z-index: 100;
+        top: calc(50% - 15px);
+        /* transform: translateY(-50%); */
+        /* background: #66676b; */
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(102, 103, 107, 0.4);
+    }
+    .loading_slots {
+        display: block !important;
+    }
+    
+    .woocommerce-breadcrumb {
+        display: none;
+    }
+    
+    .insapp_loader_ajax {
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        border: 0.3rem solid rgba(255, 255, 255, 0.2);
+        border-top-color: white;
+        /* -webkit-animation: spin 1s infinite linear; */
+        animation: spin .6s infinite linear, grow .3s forwards ease-out;
+        /* animation: spin 1s infinite linear;  */
+        top: 13px;
+        position: absolute;
+        left: 13px;
+    }
+    
+    .insapp_service_item_container {
+        /* background: linear-gradient(to top, #f4f4f4 0%, #f9f9f9 10%); */
+        /* background-color: #f6f6f6; */
+        display: block;
+        /* height: 100%; */
+        width: 100%;
+        border-radius: 4px;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s;
+        margin-bottom: 30px;
+    }
+    
+    .insapp_service_item_container .insapp_service_item {
+        background: #ccc;
+        border-radius: 10px;
+        height: 100%;
+        display: block;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        height: 250px;
+        z-index: 100;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    .insapp_service_item_container .insapp_service_item:before {
+        content: "";
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+        background: linear-gradient(to top, rgba(35, 35, 37, 0.9) 0%, rgba(35, 35, 37, 0.55) 35%, rgba(22, 22, 23, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
+        background-color: rgba(35, 35, 37, 0.2);
+        border-radius: 4px 4px 0 0;
+        opacity: 1;
+    }
+    
+    .insapp_service_item_container .insapp_service_item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        vertical-align: middle;
+        max-width: 100%;
+    }
+    
+    .insapp_service_item_container .insapp_service_item_content {
+        position: absolute;
+        bottom: 28px;
+        left: 0;
+        padding: 0 32px;
+        padding-right: 90px;
+        width: 100%;
+        z-index: 50;
+        box-sizing: border-box;
+        padding-left: 28px;
+        bottom: 23px;
+    }
+    
+    .insapp_service_item_container .insapp_service_item_content span.tag {
+        text-transform: none;
+        font-size: 13px;
+        /* letter-spacing: normal; */
+        font-weight: 60;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        padding: 5px 12px;
+        line-height: 15px;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 11px;
+        background: var(--primary);
+    }
+    
+    .insapp_service_item_container .insapp_service_item_content span {
+        font-size: 16px;
+        font-weight: 300;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 24px;
+        margin-top: 0;
+    }
+    
+    .insapp_service_item_container .insapp_service_item_content h3 {
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        font-weight: 500;
+        margin: 0;
+        line-height: 28px;
+    }
+    
+    .like-icon:hover,
+    .like-icon.liked {
+        /* background-color: #f3103c; */
+    }
+    
+    span.like-icon {
+        color: #fff;
+        position: absolute;
+        z-index: 101;
+        right: 30px;
+        bottom: 30px;
+        cursor: normal;
+        align-items: baseline;
+        /* background-color: rgba(24, 24, 24, 0.4); */
+        display: flex;
+        padding: 8px;
+        border-radius: 50%;
+        transition: all 0.4s;
+    }
+    
+    .insapp_service_small_badges_container {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 110;
+        padding-right: 50px;
+    }
+    
+    .insapp_service_item_body {
+        display: block;
+        font-size: 17px;
+        max-height: 70px;
+        padding: 10px 0;
+    }
+    
+    .insapp_service_item_body h3 {
+        color: #5a5a5a;
+        font-size: 16px;
+        position: relative;
+        font-weight: 600;
+        margin: 0;
+        line-height: 28px;
+    }
+    
+    .insapp_service_item_body span {
+        font-size: 16px;
+        font-weight: 400;
+        display: inline-block;
+        color: #0d0d0d;
+        line-height: 24px;
+        margin-top: 0;
+    }
+    
+    .insapp_service_star_rating {
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        max-height: 57px;
+    }
+    
+    .insapp_service_rating_counter,
+    .insapp_service_rating_dash {
+        /* top: -1px;
+        position: relative; */
+        color: #888;
+        padding-right: 10px;
+        display: inline-block;
+        font-size: 15px;
+    }
+    
+    .insapp_service_rating_counter i,
+    .insapp_service_rating_dash i{
+        fill: #595555;
+        font-size: 25px;
+    }
+    .insapp_service_rating_counter i.add-to-favorites,
+    .insapp_service_rating_dash i.add-to-favorites{
+        color: var(--primary)!important; 
+    }
+    .insapp_service_rating_counter svg.add-to-favorites,
+    .insapp_service_rating_dash svg.add-to-favorites{
+        fill: var(--primary)!important; 
+        font-size: 25px;
+    }
+    
+    span.ia-unbookmark{
+        padding: 8px 10px 9px 10px;
+         border: 1px solid #ffffff;
+        border-radius: 50%;
+    }
+    span.ia-unbookmark svg{
+        fill: #ffffff;
+        font-size: 20px;
+    }
+     
+    span.bookmark.add-to-favorite{
+        background-color: var(--primary);
+        padding: 10px;
+        border-radius: 50%;
+    }
+    span.bookmark.add-to-favorite svg{
+        fill: #ffffff;
+        font-size: 25px;
+    }
+    /**********************************************
+    ********        single services       *********
+    **********************************************/
+    .insapp_single_services_wrapper{
+        background-color: #fff;
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+    .insapp_single_services {
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #333;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .insapp_single_services_container {
+        overflow: hidden;
+        z-index: 2;
+        position: relative;
+        min-height: 420px;
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #333;
+    
+    }
+    
+    .insapp_single_services_image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 28%, rgba(0, 0, 0, .6) 100%);
+    }
+    
+    .insapp_single_services_content {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .insapp_single_services_content_title {
+        display: block;
+        float: left;
+        width: calc(100% - 366px);
+        margin: 20px 30px;
+    }
+    
+    .insapp_service_price {
+    
+        font-size: 30px;
+        display: flex; 
+        /* font-weight: 500;  */
+        align-items: end;
+        padding-bottom: 20px;
+        color: #ffffff;
+        font-family: system-ui;
+    }
+    
+    .insapp_service_price span {
+        
+    }
+    
+    .insapp_single_service_body_price span.price{
+        display: inline-block;
+        padding-left: 35px;
+        padding-right: 12px;
+        font-size: 13px;
+        font-weight: 500;
+        background-color: #fff;
+        color: #777;
+        border: none;
+        border-radius: 100px;
+        line-height: 32px;
+        height: 32px;
+        vertical-align: top;
+        position: relative;
+        margin-bottom: 3px;
+        border: none;
+        color: #4f9629;
+        margin-left: 5px;
+        margin: 0;
+        background: #6add2d2b;
+    }
+    .insapp_single_service_body_price{
+        margin: 30px;
+    }
+    
+    .insapp_single_service_body_price span svg{
+        position: absolute;
+        fill: #fff; 
+        top: 5px;
+        left: 6px; 
+    }
+    
+    .insapp_single_service_body_price span span.ia-svg{
+        height: 4px;
+        padding: 12px;
+        position: absolute;
+        max-width: 1px;
+        height: 20px;
+        width: 20px;
+        top: 5px;
+        left: 6px;
+        border-radius: 100%;   
+        color: #fff;
+        background-color: #64bc36;
+    }
+    .insapp_single_services_container .insapp_service_item_content span.tag {
+        border-radius: 50px;
+        padding: 8px 15px;
+        line-height: 15px;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 11px;
+        font-weight: 400;
+        margin-bottom: 11px;
+        background: var(--primary);
+    }
+    
+    
+    .insapp_single_services_container .insapp_service_item_content span {
+        font-size: 16px;
+        font-weight: 300;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 24px;
+        margin-top: 0;
+    }
+    
+    
+    .insapp_single_services_container .insapp_service_item h1 {
+        color: #fff;
+        font-size: 35px;
+        position: relative;
+        font-weight: 700;
+        padding: 20px 0;
+        line-height: 40px;
+    }
+    
+    .insapp_single_service_body {
+        padding: 30px;
+        border: none;
+        font-family: system-ui;
+        background: none transparent;
+        box-shadow: none;
+        clear: both; 
+        font-family: system-ui;
+    }
+    
+    
+    .flatpickr-day.endRange,
+    .flatpickr-day.endRange.inRange,
+    .flatpickr-day.endRange.nextMonthDay,
+    .flatpickr-day.endRange.prevMonthDay,
+    .flatpickr-day.endRange:focus,
+    .flatpickr-day.endRange:hover,
+    .flatpickr-day.selected,
+    .flatpickr-day.selected.inRange,
+    .flatpickr-day.selected.nextMonthDay,
+    .flatpickr-day.selected.prevMonthDay,
+    .flatpickr-day.selected:focus,
+    .flatpickr-day.selected:hover,
+    .flatpickr-day.startRange,
+    .flatpickr-day.startRange.inRange,
+    .flatpickr-day.startRange.nextMonthDay,
+    .flatpickr-day.startRange.prevMonthDay,
+    .flatpickr-day.startRange:focus,
+    .flatpickr-day.startRange:hover {
+        background: var(--primary);
+        border-color: var(--primary);
+        box-shadow: none;
+        color: var(--dashui-white);
+        border-radius: 50%;
+    }
+    .flatpickr-day:hover {
+        color: #2a2a2a;
+        border-radius: 50%;
+    }
+    
+    .flatpickr-day.today {
+        background-color: #fff!important;
+        border-color: var(--primary)!important ;
+        color: #000!important;
+        border-radius: 50%;
+    }
+    
+    .flatpickr-day.flatpickr-disabled,
+    .flatpickr-day.flatpickr-disabled:hover {
+        background: transparent;
+        border-color: transparent;
+        color: #cbd5e1 !important;
+        cursor: default;
+        cursor: not-allowed;
+    }
+    
+    .insapp_single_service_description {
+        position: relative;
+        overflow: visible;
+        box-sizing: border-box;
+        min-height: 1px;  
+        margin-bottom: 15px;
+        counter-reset: wpsmtop;
+        word-wrap: break-word;
+        font-size: 16px;
+        line-height: 28px;
+        color: #333;
+        padding: 0 20px 20px 30px!important;
+    }
+    .insapp_listing_content{
+        margin-bottom: 1.875rem;
+    }
+    .insapp_avatar_back{
+        background-size: cover;
+        background-repeat : no-repeat;
+        background-position: center;
+    }
+    .insapp_title_single{
+        color:#222222;
+        font-size: 1.125rem;
+        margin: 0;
+        font-family: system-ui;
+    }
+    .insapp_title_single6{
+        color:#222222;
+        font-size: 1rem;
+        margin: 0 0 1rem;
+        font-family: system-ui;
+    }
+    .insapp_description-inner{
+        position: relative;
+    }
+    .insapp_description-inner-wrapper{
+        height: 400px;
+        overflow: hidden;
+    }
+    .insapp_single_service_description
+     .insapp_description-inner.show-more:before {
+        content: '';
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        background-image: -webkit-linear-gradient(top, transparent 0%, #fff 100%);
+        background-image: -o-linear-gradient(top, transparent 0%, #fff 100%);
+        background-image: linear-gradient(to bottom, transparent 0%, #fff 100%);
+    }
+    .insapp_show-more-less-wrapper {
+        margin-top: 12px;
+    }
+    .insapp_show-more-less-wrapper  a {
+        color: var(--primary);
+        text-decoration: underline!important;
+    }
+    .insapp_show-more-less-wrapper  a:hover{
+        text-decoration: none!important;
+    }
+    .insapp-text-hover-link{
+        color: var(--primary)!important;
+        font-weight: 500;
+    }
+    .ia-show-less{
+        display: none;
+    }
+    
+    .flatpickr-day.endRange,
+    .flatpickr-day.endRange.inRange,
+    .flatpickr-day.endRange.nextMonthDay,
+    .flatpickr-day.endRange.prevMonthDay,
+    .flatpickr-day.endRange:focus,
+    .flatpickr-day.endRange:hover,
+    .flatpickr-day.selected,
+    .flatpickr-day.selected.inRange,
+    .flatpickr-day.selected.nextMonthDay,
+    .flatpickr-day.selected.prevMonthDay,
+    .flatpickr-day.selected:focus,
+    .flatpickr-day.selected:hover,
+    .flatpickr-day.startRange,
+    .flatpickr-day.startRange.inRange,
+    .flatpickr-day.startRange.nextMonthDay,
+    .flatpickr-day.startRange.prevMonthDay,
+    .flatpickr-day.startRange:focus,
+    .flatpickr-day.startRange:hover {
+        background: var(--primary);
+        border-color: var(--primary);
+        box-shadow: none;
+        color: var(--dashui-white);
+        border-radius: 50%;
+    }
+    
+    .insapp_single_service_booking {
+        padding: 0 15px;
+        box-sizing: border-box;
+       
+    }
+    
+    .insapp_booking_wrap {
+         
+    
+    }
+    .insapp_booking_content{
+        margin: 0 0 30px;
+        padding: 0.9375rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        border: 1px solid #EAEAEA;
+    }
+    
+    .insapp_vendor_details .author-thumbnail + .author-content {
+        padding-left: 1.125rem;
+    }
+    
+    .insapp_vendor_details .name {
+        font-size: 1rem;
+        margin: 0 0 3px;
+    }
+    
+    .insapp_vendor_details .socials-list {
+        font-size: 1rem;
+        margin: 0 0 3px;
+    }
+    .insapp_booking_content .list, .list-no {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .insapp_listing-detail-categories li{
+        padding-left: 2.8125rem;
+        margin-bottom: 1.25rem;
+        line-height: 35px;
+        position: relative;
+    }
+    
+    .insapp_listing-detail-categories .icon-cate {
+        margin-right: 0.625rem;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #fff;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .insapp_vendor_details .socials-list li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+    
+    .insapp_btn_message{
+        background: var(--primary);
+        border-color: var(--primary);
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.6; 
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none; 
+        border: 1px solid transparent;
+        padding: 0.5rem 1rem;
+        margin-top: 15px;
+        font-size: 0.9375rem;
+        border-radius: 0.5rem;
+        transition: color 0.15s ease-in-out, 
+    }
+    
+    .insapp_btn_message:hover{
+        background: var(--light);
+        border-color: var(--light); 
+    }
+    
+    .insapp_listing-detail-categories a,.insapp_vendor_details a  {
+        color: #222222;
+        text-decoration: none;
+    }
+    .contact-form-wrapper button {
+        width: 100%;
+        position: relative;
+    }
+    
+    .insapp_vendor_details .socials-list a {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.75rem;
+        text-align: center;
+        background-color: #F4F4F4;
+        color: var(--guido-text-color);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        border-radius: 50%;
+    }
+    
+    .insapp_vendor_details .author-thumbnail {
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .insapp_vendor_details .author-thumbnail img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+     
+    .insapp_booking_date {
+        display: none;
+    }
+    
+    .insapp_form_booking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .insapp_info {
+        padding: 10px;
+        background-color: #ffdae0;
+        text-align: center;
+        font-weight: 600;
+        justify-content: center;
+        color: #df1e3d;
+        border-radius: 10px;
+        display: none;
+    }
+    .insapp_warning_b{
+        padding: 10px;
+        background-color: #ffdae0;
+        text-align: center;
+        font-weight: 600;
+        color: #df1e3d;
+        border-radius: 10px; 
+    }
+    .insapp_info_b {
+        padding: 10px;
+        background-color: #bed0ff;
+        text-align: center;
+        font-weight: 600;
+        color: #1e67b6;
+        border-radius: 10px;
+    }
+    .insapp_register_service_info{
+        padding: 10px;
+        font-weight: 600;
+        color: #1e67b6; 
+        display: none;
+    }
+    .insapp_button_back a,
+    .insapp_button_back button,
+    .insapp_button_back {
+        background-color: var(--primary);
+        padding: 5px 20px;
+        color: #fff !important;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block; 
+        cursor: pointer;
+        text-align: center;
+        overflow: hidden;
+        border: none;
+        border-radius: 50px;
+        letter-spacing: normal !important;
+    }
+    
+    .insapp_button a,
+    .insapp_button button,
+    .insapp_button {
+        background-color: var(--primary);
+        top: 0;
+        padding: 9px 20px;
+        color: #fff !important;
+        position: relative;
+        font-size: 15px;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        width: 250px;
+        overflow: hidden;
+        border: none;
+        border-radius: 50px;
+        letter-spacing: normal !important;
+    }
+    
+    .insapp_button:hover a,
+    .insapp_button:hover button,
+    .insapp_button:hover {
+        background-color: var(--light);
+        color: #fff !important;
+    }
+    
+    .insapp_button:before {
+        width: 100%;
+        height: 100%;
+        content: "";
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    
+    .insapp_booking_slots .insapp_loadingspinner {
+        pointer-events: none;
+        width: 20px;
+        height: 20px;
+        border: 3px solid transparent;
+        border-color: rgba(255, 255, 255, 0.5);
+        border-top-color: #fff;
+        border-radius: 50%;
+        -webkit-animation: loadingspin 1s linear infinite;
+        animation: loadingspin 1s linear infinite;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 12px;
+        transition: opacity 0.4s;
+        /* opacity: 0; */
+    }
+    
+    .insapp_loadingspinner {
+        pointer-events: none;
+        width: 20px;
+        height: 20px;
+        border: 3px solid transparent;
+        border-color: rgba(255, 255, 255, 0.5);
+        border-top-color: #fff;
+        border-radius: 50%;
+        -webkit-animation: loadingspin 1s linear infinite;
+        animation: loadingspin 1s linear infinite;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 12px;
+        transition: opacity 0.4s;
+        /* opacity: 0; */
+    }
+    
+    .insapp_vendor_store_details_single {
+        display: table-cell;
+        vertical-align: top;
+        line-height: 0.8;
+        padding: 10px;
+        padding-left: 0;
+    
+    }
+    
+    .insapp_vendor_store_details_label {
+        font-size: 60%;
+        line-height: .8;
+        color: #818181;
+    }
+    
+    .insapp_vendor_store_details_title {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .insapp_vendor_store_details_title h5 {
+        font-size: 16px;
+        display: block;
+        margin: 0;
+    }
+    
+    .insapp_vendor_store_details_title a {
+        color: #000
+    }
+    
+    .insapp_booking_content .flatpickr-calendar {
+        box-shadow: 0 0 0 var(--dashui-gray-200), 0 0 0 var(--dashui-gray-200), 0 0 0 var(--dashui-gray-200), 0 0 0 var(--dashui-gray-200), 0 0 0 rgba(0, 0, 0, .08) !important;
+    }
+    
+    .insapp_booking_slots {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+    
+    .insapp_date_slot {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--primary);
+        height: 35px;
+        width: 85px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 5px;
+        margin: 5px 5px 5px 5px;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: var(--primary);
+        cursor: pointer;
+    }
+    .insapp_btn_state_sub{
+        color: var(--primary)!important;
+        border: 1px solid var(--primary);
+        border-radius: 20px;
+    text-align: center;
+        padding: 10px 30px ;
+        margin: 20px 10px;
+    }
+    .insapp_btn_state_sub:hover{
+        color: #ffffff!important;
+        background-color: var(--primary);
+    }
+    .insapp_date_slot_vide{
+        font-size: 14px;
+        font-weight: 500; 
+        color: var(--primarystrong); 
+        display: flex; 
+         justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border:1px solid var(--primarystrong); 
+    }
+    .insapp_details{
+        font-size: 14px;
+        font-weight: 600; 
+        color: var(--light); 
+        text-decoration: underline;
+        background-color: #00000000;
+    }
+    
+    .style_slots {
+        background-color: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+    }
+    
+    @media (max-width: 421px) {
+        .insapp_single_services_container .insapp_service_item h1 {
+            color: #fff;
+            font-size: 25px;
+            position: relative;
+            font-weight: 700;
+            padding: 20px 0;
+            line-height: 30px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .insapp_single_services_container .insapp_service_item h1 {
+            font-size: 30px; 
+        }
+    }
+    @media (max-width: 992px) {
+        .insapp_single_services_container .insapp_service_item h1 {
+            font-size: 30px; 
+            line-height: 35px;
+        }
+        .insapp_single_services_container .insapp_service_item_content span.tag {
+            font-size: 14px; 
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .insapp_single_services_content_title {
+            width: 100%;
+        }
+        .insapp_single_services_container .insapp_service_item h1 {
+            font-size: 25px; 
+        }
+    }
+    /**************** liste of services************/
+    
+    .ia-listing-section {
+        padding: 24px;
+        background-color: #fff;
+    }
+    
+    .insapp-list-head {
+        padding: 16px 24px;
+    }
+    
+    .insapp-row:before {
+        display: table;
+    }
+    
+    .ia-listing-time.pending {
+        background-color: rgba(255, 167, 0, .1);
+        color: #ffa700;
+    }
+    
+    .insapp-listing-checkbox {
+        display: block;
+        margin-bottom: 2px;
+    }
+    
+    .insapp-checkbox .insapp-listing-checkbox-input {
+        cursor: pointer;
+        outline: 0;
+        line-height: 1;
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+    }
+    
+    .am-appointments-list input[type=checkbox],
+    .am-appointments-list input[type=radio] {
+        display: none;
+    }
+    
+    .insapp-listing-checkbox .checkbox__inner {
+        display: inline-block;
+        position: relative;
+        border: 1px solid #dcdfe6;
+        border-radius: 2px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        z-index: 1;
+        -webkit-transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
+        transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
+    }
+    
+    .insapp-listing-checkbox .checkbox__inner:after {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        content: "";
+        border: 1px solid #fff;
+        border-left: 0;
+        border-top: 0;
+        height: 7px;
+        left: 4px;
+        position: absolute;
+        top: 1px;
+        -webkit-transform: rotate(45deg) scaleY(0);
+        transform: rotate(45deg) scaleY(0);
+        width: 3px;
+        -webkit-transition: -webkit-transform .15s ease-in .05s;
+        transition: -webkit-transform .15s ease-in .05s;
+        transition: transform .15s ease-in .05s;
+        transition: transform .15s ease-in .05s, -webkit-transform .15s ease-in .05s;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+    }
+    
+    .am-appointment-data h3 {
+        margin-bottom: 0;
+        overflow: hidden;
+        max-width: 100%;
+        height: 24px;
+    }
+    
+    .ins-card {
+        border: 2px solid #000;
+        padding: 10px;
+        max-width: unset !important;
+        background-color: #eee;
+    }
+    
+    .hiddenRow {
+        padding: 0 !important;
+    }
+    
+    .insapp_listing_timeline {}
+    
+    .insapp_listing_timeline span {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #354052;
+    
+    }
+    
+    .insapp_listing { 
+        border-top: 2px solid #fdfdfd;
+        border-bottom: 2px solid #eee;
+        padding: 20px 0px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    
+    .insapp_listing:hover {
+        background-color: #f9f9f9;
+    }
+    
+    .ia_table_title {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #354052;
+    }
+    
+    .ia_table_subtitle {
+        font-size: 14px;
+        color: #354052;
+        font-weight: 600;
+    }
+    
+    .ia_table_text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #7f8fa4;
+        line-height: 1.1;
+    }
+    
+    .ia_table_collapse {
+        /* text-decoration: underline; */
+        color: #ffffff00; 
+    }
+    .ia_table_collapse .insapp_btn_state{ 
+        color: var(--primary)!important; 
+        border: 1px solid var(--primary);
+        border-radius: 20px;
+        margin-left: 5px;
+        padding: 3px 8px;
+    }
+    .ia_table_collapse .insapp_btn_state:hover,.ia_table_collapse .insapp_btn_state:focus {
+        color: #ffffff !important;
+        background-color: var(--primary)!important;  
+        border: 1px solid var(--primary);
+        border-radius: 20px;
+        margin-left: 5px;
+        padding: 3px 8px;
+    }
+    .insapp_btn_action{
+            color: #ffffff !important;
+                background-color: var(--primary) !important;
+                border-radius: 50%;
+                padding: 6px 2px 10px 10px;
+                cursor: pointer;
+    }
+    
+    .insapp_btn_action_widget{ 
+        color: var(--primary)!important; 
+        border: 1px solid var(--primary);
+        border-radius: 20px;
+        margin-left: 5px;
+        padding: 10px 20px;
+    }
+    .insapp_btn_action_widget:hover {
+        color: #ffffff !important;
+        background-color: var(--primary)!important;  
+    }
+    
+    .insapp_listing .badge {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    
+    .detailslistingcollapse {
+        margin-top: 16px;
+        border-top: 1px solid rgb(226, 230, 236);
+        padding: 16px 0px;
+        color: rgb(50, 58, 69);
+    }
+            .insapp_single_service_description .list-group-item svg {
+                color: #000000;
+            }
+        
+            .insapp_accordion_title {
+                color: #1e293b;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        
+            .insapp_single_service_description li a:hover {
+                color: #ffffff00;
+                border: 0px solid #eee !important;
+            }
+        
+            .insapp_single_service_description li a:focus {
+                color: var(--primary);
+                border: 0px solid #eee !important;
+                background-color: #eee;
+                padding: 10px;
+            }
+    
+            .insapp_gallery {
+                overflow: hidden;
+                z-index: 2;
+                position: relative;
+                height: 100px;
+                width: 100px;
+                color: #fff;
+                border-radius: 10px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+    /*************wodget ***************/
+    
+    
+        .ia_menu_widget_container .ia_menu_widget_btn .dropdown-menu{ display: none; }
+        .ia_menu_widget_container .ia_menu_widget_btn:hover .dropdown-menu{ display: block; }
+        .ia_menu_widget_container .ia_menu_widget_btn .dropdown-menu{ margin-top:10px; }
+    
+       
+    .ia_menu_widget_container {
+        position: relative;
+      }
+      .ia_menu_widget_container a,.ia_menu_widget_content svg{
+        color: #484848;
+        vertical-align: middle;
+      }
+      .ia_menu_widget_container a:hover,.ia_menu_widget_content svg:hover{
+        color: #000;
+          vertical-align: middle;
+      }
+      .ia_menu_widget_container svg{
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      .ia_menu_widget_container:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 15px;
+      }
+      .ia_menu_widget_menu> li > a {
+        background: transparent !important;
+        padding: 10px 0;
+        display: inline-block;
+        width: 100%;
+    }
+    .ia_menu_widget_container .dropdown-item:hover {
+        background-color: #fff!important;
+        border-radius: 0;
+        text-decoration: none
+    }
+      
+    .ia_menu_widget_menu > li {
+        float: none;
+        white-space: nowrap;
+        border-bottom: 1px solid #EAEAEA;
+    }
+      .ia_menu_widget_container .space {
+        margin: 0 7px;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+      }
+      
+      .ia_menu_widget_container .ia_menu_widget_content {
+        margin-top: 5px;
+        padding: 16px 30px;
+        position: absolute;
+        top: 100%;
+        /* right: 0; */
+        opacity: 0;
+        filter: alpha(opacity=0);
+        visibility: hidden;
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        -o-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s;
+        -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        transform: translateY(10px);
+        background: #fff;
+        border: 1px solid #EAEAEA;
+        border-radius: 0.5rem;
+        z-index: 4;
+        min-width: 200px;
+        -webkit-box-shadow: 0 18px 60px 0 rgba(23, 26, 33, 0.05);
+        box-shadow: 0 18px 60px 0 rgba(23, 26, 33, 0.05);
+      }
+      
+      .ia_menu_widget_container:hover .ia_menu_widget_content {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+      }
+      
+      .ia_menu_widget_container .header_customer_login {
+        margin-top: 10px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        min-width: 320px;
+        z-index: 9;
+      }
+      
+      .ia_menu_widget_container:hover .header_customer_login {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+        background: #fff;
+        -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.15);
+      }
+      
+      .ia_menu_widget_container .infor-account .avatar-wrapper {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 50%;
+        float: left;
+        display: -webkit-flex;
+        /* Safari */
+        -webkit-align-items: center;
+        /* Safari 7.0+ */
+        display: flex;
+        align-items: center;
+      }
+      
+      .ia_menu_widget_container .infor-account .avatar-wrapper img {
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      
+      .ia_menu_widget_container .infor-account .avatar-wrapper + .name-acount {
+        padding-left: 10px;
+        flex: 1;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+      }
+      
+      .ia_menu_widget_container .infor-account .name-acount {
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #000;
+      }
+      
+      .ia_menu_widget_container .infor-account .name-acount.white {
+        color: #fff;
+      }
+      
+      .ia_menu_widget_container .infor-account .name-acount i {
+        margin-left: 7px;
+        font-size: 12px;
+      }
+      
+    
+      .ia_menu_widget_container .ia_btn_login_white{
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff!important;
+      }
+     
+      
+      .header_customer_login {
+        padding: 1.875rem;
+      }
+      
+      .header_customer_login .title {
+        margin: 0 0 10px;
+        font-size: 25px;
+      }
+      
+      .header-default {
+        background: #fff;
+        border-bottom: 1px solid #EAEAEA;
+        padding: 25px 0;
+      }
+    
+      .ia-add-google-calendar{
+        color: #272727;
+        font-weight: 500;
+        font-size: 14px;
+        border: 1px #818181 solid;
+        border-radius: 50px;
+        padding: 10px;
+    }
+    
+    .ia-add-google-calendar:hover,.ia-add-google-calendar:focus{
+    
+        background-color: #eee;
+    } 
+    
+     .ia-sidebar-listing{
+        
+    }
+    .ib_show{
+      display: flex!important;    
+    }
+    
+    @media (max-width:991px){
+       .ia-sidebar-listing{
+            position: relative;
+        }
+            .ia-sidebar-container{
+          z-index: 10000;
+          display:none;
+          position: absolute!important;
+          width: 350px;
+          right: 20px;
+          top: 50px!important;
+        }
+        .listings-ordering{
+            display:flex;
+        }
+  } 
+   

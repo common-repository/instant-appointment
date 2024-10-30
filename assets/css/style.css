@@ -1,0 +1,151 @@
+/************************** datatable *******************/
+.insapp_body_wrapper {
+    
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.insapp_body_wrapper thead {
+  background: #ffffff;
+  
+}
+.insapp_body_content tr {
+  box-shadow: 0 0 20px 0 #F6F8FA;
+}
+.insapp_body_content tbody tr {
+  vertical-align: middle;
+  text-align: left;
+  background: #FFF;
+  padding: 2px 10px;
+  color: #292D32;
+  border-top: 7px solid #F6F8FA;
+}
+.insapp_body_content tr {
+  box-shadow: 0 0 20px 0 #F6F8FA;
+}
+
+
+.insapp_user_card>.user_details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 13px;
+  justify-content: center; 
+}
+.insapp_user_card>.user_details>:first-child {
+  color: #292d32;
+  font-size: 14px;
+}
+.insapp_user_card>.user_details>span {
+  color: #95a0a9;
+  font-size: 12px;
+}
+
+.insapp_user_card .circle_image {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255,255,255,.8);
+  flex-shrink: 0;
+}
+
+
+/* Toggle switch */
+
+.ergebnis {
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 2rem 0 2rem 2rem;
+  color: white;
+}
+
+.insapp_toggle {
+  margin: 0rem 1rem;
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+}
+
+.insapp_toggle input {
+  display: none!important;
+}
+
+.insapp_roundbutton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #afafaf;
+  display: block;
+  transition: all 0.3s;
+  height: 22px;
+  border-radius: 3.4rem;
+  box-shadow: -4px 4px 15px inset rgb(161 161 161);
+  cursor: pointer;
+}
+
+.insapp_roundbutton:before {
+position: absolute;
+content: "";
+height: 1rem;
+width: 1rem;
+border-radius: 100%;
+display: block;
+left: 0.25rem;
+bottom: 0.19rem;
+background-color: #f0f5ff;
+transition: all 0.3s;
+}
+
+input:checked+.insapp_roundbutton {
+background-color: #a092fd;
+box-shadow: -4px 4px 15px inset rgb(103, 80, 253);
+  
+}
+input:checked+.insapp_roundbutton:before  {
+  background-color: #d7d1ff;
+  box-shadow: -4px 4px 15px inset rgb(212 206 255);
+  transform: translate(1.7em, 0);
+}
+
+.ia_profil_details .socials-list {
+font-size: 1rem;
+margin: 0 0 3px; 
+  padding-left: 0  
+}
+.ia_profil_details .socials-list li {
+display: inline-block;
+vertical-align: middle;
+margin-right: 0.5rem;
+} 
+.ia_profil_details .socials-list a {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 35px;
+height: 35px;
+line-height: 35px;
+font-size: 0.75rem;
+text-align: center;
+background-color: #F4F4F4;
+color: var(--guido-text-color);
+-webkit-transition: all 0.3s ease-in-out 0s;
+-o-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s;
+border-radius: 50%;
+}
+
+@media (max-width: 1114px) {
+.insapp_body_wrapper .table td, .insapp_body_wrapper.table th {
+/* text-align: center; */
+  padding: 5px;
+}
+}

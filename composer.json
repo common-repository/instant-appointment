@@ -1,0 +1,17 @@
+{
+    "name": "tenteedev10/pixz_booking",
+    "autoload": {
+        "psr-4": {
+            "Tenteedev10\\PixzBooking\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "azanfack kemgou chanele brinda",
+            "email": "chanele.azanfack@tenteeglobal.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0"
+    }
+}

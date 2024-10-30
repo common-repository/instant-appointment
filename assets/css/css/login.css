@@ -1,0 +1,731 @@
+:root {
+    --primary: #ED6F73;
+    --light: #657CEE;
+      --primarystrong: #ff555a;
+  }
+    /*var(--light)*/
+    
+    .insapp_login_container {
+        min-height: 600px;
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+        /* background-color: #fcf6ff; */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    
+        /* background: -webkit-linear-gradient(left, #a445b2, var(--primary)); */
+    }
+     
+    body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    .insapp_group { 
+        display: flex; 
+        justify-content: center;
+    }
+    .insapp_img_banner{
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+    }
+    .insapp_btn_group {
+        padding: 2px;
+        display: flex;
+        min-width: 80%;
+    }
+    
+     i.insapp_pw_hide {
+         right: 0;
+         font-size: 18px;
+         cursor: pointer;
+         color: #0b0217;
+         margin-right: 5px;
+     }
+    .insapp_form_inner form .field i {
+         position: absolute;
+        top: 50%;
+        right: 10px;
+         transform: translateY(-50%);
+         font-size: 20px;
+         color: #000;
+     }
+    
+    .insapp_btn_group label {
+        margin-right: 10px;
+    }
+    
+    
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .insapp_login_container .btn-check:checked+.btn,
+    .insapp_login_container .btn.active,
+    .insapp_login_container .btn.show,
+    .insapp_login_container .btn:first-child:active,
+    :not(.btn-check)+.btn:active {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: #fff;
+        font-size: 16px;
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+    }
+    .insapp_login_container .btn-check:checked+.btn svg{
+        fill:#ffffff;  
+    }
+    .insapp_login_container svg{
+        margin-right: 5px; 
+        padding-bottom: 2px;
+    }
+    .account-type input.account-type-radio:checked~label i {
+        color: #fff;
+    }
+    .insapp_login_container .btn-outl-pri {
+        background-color: #ffffff;
+        border-color: var(--primary);
+        color: var(--primary);
+        font-size: 16px;
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .insapp_login_container .btn-check+.btn-outl-pri:hover {
+        border-color: var(--primary);
+    }
+    
+    
+    
+    .insapp_active_login {
+        display: grid;
+    }
+    
+    /* ::selection{
+      background: var(--primary);
+      color: #fff;
+    } */
+    .insapp_login_content {
+        overflow: hidden;
+        /* max-width: 390px; */
+        background: #fff;
+        padding: 30px;
+        width: 50%;
+        border-radius: 5px;
+        box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+    }
+    
+    .insapp_login_content .insapp_title_text {
+        /* display: flex; */
+        /* width: 100%; */
+    }
+    
+    .insapp_login_content .title {
+        /* width: 50%; */
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .insapp_title_text .insapp_register {
+        display: none;
+    }
+    
+    form.insapp_register {
+        display: none;
+    }
+    
+    .insapp_login_content .insapp_slide_controls {
+        position: relative;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        overflow: hidden;
+        margin: 30px 0 10px 0;
+        justify-content: space-between;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+    }
+    
+    .insapp_login_container .insapp_slide_controls .insapp_slide {
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+        z-index: 1;
+        transition: all 0.6s ease;
+    }
+    
+    .insapp_login_container .insapp_slide_controls label.insapp_register {
+        color: #000;
+    }
+    
+    .insapp_login_container .insapp_slide_controls .insapp_slider_tab {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        left: 0;
+        z-index: 0;
+        border-radius: 5px;
+        background-color: var(--primary);
+        /* background: -webkit-linear-gradient(left, #a445b2, var(--primary)); */
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .insapp_login_container input[type="radio"] {
+        display: none;
+    }
+    
+    .insapp_login_container #insapp_register:checked~.insapp_slider_tab {
+        left: 50%;
+    }
+    
+    #insapp_register:checked~label.insapp_register {
+        color: #fff;
+        cursor: default;
+        user-select: none;
+    }
+    
+    #insapp_register:checked~label.insapp_login {
+        color: #000;
+    }
+    
+    #insapp_login:checked~label.insapp_register {
+        color: #000;
+    }
+    
+    #insapp_login:checked~label.insapp_login {
+        cursor: default;
+        user-select: none;
+    }
+    
+    .insapp_login_content .insapp_form_container {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .insapp_form_container .insapp_form_inner {
+        /* display: flex;
+      width: 200%; */
+    }
+    
+    .insapp_form_container .insapp_form_inner form {
+        width: 100%;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .insapp_form_inner form .field {
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .insapp_form_inner form .field input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        padding-left: 15px;
+        border-radius: 5px;
+        border: 1px solid #dddddd;
+        background-color: #fff;
+        /* border-bottom-width: 2px; */
+        /* background-color: #fff; */
+        font-size: 17px;
+        transition: all 0.3s ease;
+    }
+    
+    .insapp_form_inner form .field input:focus {
+        border-color: #e8b4ff;
+        box-shadow: inset 0 0 3px #f6e1ff;
+    }
+    
+    .insapp_form_inner form .field input::placeholder {
+        color: #999;
+        transition: all 0.3s ease;
+    }
+    
+    form .field input:focus::placeholder {
+        color: #b3b3b3;
+    }
+    
+    .insapp_form_inner form .pass-link {
+        margin-top: 5px;
+    }
+    
+    .insapp_form_inner form .insapp_signup_link {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .insapp_form_inner form .pass-link a,
+    .insapp_form_inner form .insapp_signup_link a {
+        color: var(--primary);
+        text-decoration: none;
+    }
+    
+    .insapp_form_inner form .pass-link a:hover,
+    .insapp_form_inner form .insapp_signup_link a:hover {
+        text-decoration: underline;
+    }
+    
+    .insapp_form_inner form .btn {
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .insapp_form_inner form .insapp_btn {
+        height: 100%;
+        width: 100%;
+        background-color: var(--primary);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: normal;
+        transition: all 0.4s ease;
+        ;
+    }
+    
+    .insapp_user_profile .owl-carousel .owl-nav button.owl-prev,
+    .insapp_user_profile .owl-carousel .owl-nav button.owl-next {
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+            display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insapp_avatar_back{
+        z-index: 1000;
+    }
+    
+    .insapp_user_profile .owl-carousel .owl-nav button.owl-next {
+        right:20px;
+    }
+    .insapp_user_profile .owl-carousel .owl-nav button.owl-prev {
+        left:20px;
+    }
+    .insapp_user_profile .owl-carousel .owl-nav button:hover span{
+            color: var(--light);
+    }
+    
+    form .insapp_btn:disabled {
+        background-color: var(--light);
+    }
+    form .insapp_btn:hover {
+        border: 5px;
+    }
+    
+    form .btn input[type="submit"] {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        background: none;
+        border: none;
+        color: #fff;
+        padding-left: 0;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    td .btn {
+        height: unset !important;
+        width: unset !important;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+    .ia_user_icon{
+    
+    }
+    
+    .insapp_checkbox_content a{
+      color: var(--primary);
+    }
+    .insapp_checkbox_content a:hover{
+        color: #333;
+      }
+    
+      .insapp_checkbox_content label {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        padding-left: 28px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .insapp_checkbox_content label:before {
+        content: "\f00c";
+    }
+    .insapp_checkbox_content input{
+     position: absolute;
+     margin-top: 5px
+    }
+    
+    
+    
+    .insapp_checkbox_content input[type=checkbox]:checked+label:before {
+        content: "\f00c";
+        background-color: var(--primary);
+        border: 2px solid var(--primary);
+    }
+    .insapp_checkbox_content label:before {
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin-right: 10px;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        background-color: #fff;
+        border: 2px solid #d0d0d0;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        transition: .3s;
+        font-family: "font awesome 5 free";
+        font-weight: 900;
+        font-size: 11px;
+        color: #fff;
+        text-align: center;
+        line-height: 16px;
+      }
+    /* resonsives 992px 768px 576px*/
+    @media (max-width: 992px) {
+    
+        .insapp_login_content {
+            width: 70%; 
+            
+        }
+        
+    }
+    
+    @media (max-width: 768px) {
+    
+        .insapp_login_content {
+            width: 100%; 
+            margin: 0 20px;
+        }
+        
+    }
+    
+     
+      /***************************************************
+      **                   abonnement                    ***
+      ***************************************************/
+    
+      .insapp_pricin_col .list-group-item {
+      padding: 10px!important;
+      }
+     
+      .insapp_pricin_col .ib_pricing__price{
+        background-color: #f7f7fb;
+        text-align: center;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        min-height: 90px;
+      }
+      .insapp_pricin_col .ib_pricing__price_prefix{
+        color: var(--primary);
+        vertical-align: top;
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+      }
+      .insapp_pricin_col .ib_pricing__price_val{
+        color: var(--primary);
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: none;
+      }
+      .insapp_pricin_col .ib_pricing__price_suffix{
+        color: var(--primary);
+        vertical-align: baseline;
+        display: inline-block;    font-size: 12px;
+        font-weight: 400;
+      }
+      .insapp_pricin_col .ib_pricing_description{
+        color: #3a3a3a!important;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Muli", Sans-serif;
+        font-style: italic;
+      }
+      .insapp_pricin_col h2{
+        color: #3a3a3a!important; 
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    
+      
+      /***************************************************
+      **                   SWITCHER                    ***
+      ***************************************************/
+      
+      
+      
+      h1 {
+        font-size: 48px;
+        color: #232c3d;
+      }
+      
+      .wrapper {
+      
+        margin: auto; 
+        border-radius: 10px;
+        /* box-shadow: 0px 5px 15px rgba(0, 0, 0, .1); */
+      }
+      
+      .buttonWrapper {
+        display: flex;
+        padding-top: 1rem; 
+        justify-content: center;
+        padding: 30px 0px;
+      }
+      .plans_type{
+      font-size: 16px;
+      }
+      
+      
+      
+      .list-group-item {
+      
+      padding: 20px 10px!important;
+      }
+      button {
+        border: none; 
+        padding: 10px;
+        background-color: #bccbe9;
+        color: #232c3d;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      
+      button:hover {
+        background-color: #d5e3ff;
+      }
+      
+      button.active {
+        background-color: white;
+      }
+      
+      .active {
+        background-color: transparent;
+      }
+      
+      .content {
+        display: none; 
+      }
+      
+      .content.active {
+        display: block;
+      }
+      
+      
+      /* Toggle switch */
+      
+      .insapp_pricin_gpage .toggle {
+        margin: 0rem 1rem;
+        position: relative;
+        display: inline-block;
+        width: 6rem;
+        height: 2rem;
+      }
+      
+      .insapp_pricin_gpage .toggle input {
+        display: none;
+      }
+      
+      .insapp_pricin_gpage .roundbutton {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background-color: var(--primary);
+      display: block;
+      transition: all 0.3s;
+      height: 30px;
+      border-radius: 3.4rem;
+      box-shadow: -4px 4px 15px inset rgb(194 105 232);
+      cursor: pointer;
+      }
+      
+      .insapp_pricin_gpage .roundbutton:before {
+      position: absolute;
+      content: "";
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100%;
+      display: block;
+      left: 0.35rem;
+      bottom: 0.25rem;
+      background-color: #f0f5ff;
+      transition: all 0.3s;
+      }
+      
+      .insapp_pricin_gpage input:checked+.roundbutton {
+      background-color: var(--primary);
+      }
+      .insapp_pricin_gpage input:checked+.roundbutton:before {
+        transform: translate(3.7em, 0);
+      }
+      
+      .insapp_pricin_gpage .span {
+        font-size: xx-large;
+      }
+      
+    .inapp_content {
+      display: none;
+      padding: 10px;
+      }
+      
+      .inapp_content.active {
+      display: block;
+      }
+      
+      
+      .insapp_pricin_col button.submit_subcription_btn, .insapp_pricin_col a.submit_subcription_btn{
+        /* letter-spacing: 1px; */
+        width: 100%;
+        margin: 20px 0px;
+        background-color: var(--primary)!important;
+        color: #FFFFFF;
+        border-radius: 7px 7px 7px 7px;
+      
+      }
+      .ib_pricing__custum_price{
+        color: var(--primary);
+        vertical-align: baseline;
+        display: inline-block;
+        font-size: 14px;
+        padding: 20px 10px 0;
+        font-weight: 400;
+      }
+      
+      .insapp_pricin_col .card{
+      height: 100%;
+      border: 1px solid #e8e8f6;
+      }
+      
+      .insapp_pricin_col ul{
+        height: 100%;
+        }
+        /*listing profil*/
+        
+    .insapp_profil_item_container{
+        border-radius: 20px;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s;
+        margin-bottom: 30px;
+        background-color: #fff;
+        box-shadow: 0 7px 30px -10px rgba(150,170,180,0.3); 
+    }
+    .insapp_profil_item_container a{
+        
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .insapp_profil_item_container .insapp_profil_item{
+        
+    }
+    .ia_stricky_template{
+        position: sticky;
+        top: 12vh;
+    }
+    .insapp_profil_item_container h4{
+        font-size: 1.2rem;
+        font-weight: 500px;
+    }
+    .insapp_profil_item_container span{
+        font-size: 14px;
+        font-weight: 400;
+        color: #585858;
+        margin:0;
+    }
+    .insapp_profil_item_container .insapp_profil_item_content{
+       min-height: 30px; 
+    }
+    .insapp_profil_item_container p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #585858;
+        margin:0;
+        min-height: 100px;
+    }
+    .border-gray-200 {
+        border-color: rgb(202 202 202) !important;
+    }
+    .insapp_profil_item_container .profil-cat{
+        text-transform: none;
+        font-size: 13px;  
+        background: rgb(220 220 220 / 30%);
+        border-radius: 50px;
+        padding: 5px 12px;
+        line-height: 15px;
+        color: #090909;
+        font-weight: 400;
+        margin-bottom: 11px;
+    }
+    
+    .insapp_profil_item_container .insapp_profil_footer{
+        
+    }
+    .insapp_profil_item_content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .insapp_profil_footer{
+        display:flex;
+    }
+    .insapp_profil_list_services{
+        display: flex;
+        gap: 10px;
+    }  
+    .insapp_profil_list_services svg{
+        fill: var(--primary);
+        width: 20px;
+    }
